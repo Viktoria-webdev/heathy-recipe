@@ -1,0 +1,121 @@
+:root {
+    --neutral-600: #395852;
+    --neutral-100: #F6F5F1;
+    --neutral-900: #163A34;
+    --neutral-300: #D0DCD9;
+--neutral-0: #fff;
+}
+
+/* #region Скидання стилів */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+/* #endregion */
+.nunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.nunito-sans {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+}
+
+.container {
+    max-width: 363px;
+    margin-inline: auto;
+    padding-inline: 10px;
+}
+
+body {
+    color: var(--neutral-600);
+    background-color: var(--neutral-100);
+    font-size: 20px;
+}
+header{
+    padding-block: 16px;
+}
+main {
+    .hero {
+        padding-block-start: 48px;
+        border-top: 1px solid var(--neutral-300);
+        margin-block-end: 64px;
+        div{
+            margin-block-end: 40px;
+        }
+        h1 {
+            font-weight: 800;
+            font-size: 52px;
+            line-height: 110%;
+            /* or 57px */
+            letter-spacing: -2px;
+            color: var(--neutral-900);
+            margin-block-end: 16px;
+        }
+
+        p {
+            margin-block-end: 32px;
+        }
+
+        &>img {
+            background: var(--neutral-0);
+            box-shadow: 0px 0px 0px 3.45px var(--neutral-0);
+            border-radius: 3px;
+        }
+    }
+}
+
+p {
+
+    line-height: 150%;
+    letter-spacing: -0.4px;
+    color: var(--neutral-600);
+}
+
+a.btn {
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: var(--neutral-0);
+    display: inline-block;
+    padding-inline: 10px;
+    align-content: center;
+    min-width: 176px;
+    max-width: 100%;
+    height: 60px;
+    background: var(--neutral-900);
+    border-radius: 10px;
+
+}
