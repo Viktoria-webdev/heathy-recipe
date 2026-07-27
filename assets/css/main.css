@@ -300,11 +300,14 @@ h2 {
 
 }
 
-.about-page main {
+.about-page main,
+.recipes-page main {
     section {
         padding-block: 48px;
     }
+}
 
+.about-page main {
     .hero {
         padding-block-end: 64px;
         display: flex;
@@ -391,9 +394,10 @@ h2 {
     }
 
     .beyond {
-        div{
+        div {
             margin-block-end: 32px;
         }
+
         h2 {
             margin-block-end: 20px;
         }
@@ -406,29 +410,146 @@ h2 {
             display: flex;
             flex-direction: column;
             row-gap: 12px;
+
             li {
                 padding-inline-start: 30px;
                 line-height: 150%;
                 letter-spacing: -0.4px;
-            position: relative;
+                position: relative;
 
-            &::before {
-                content: "";
-                background-color: var(--neutral-800);
-                border-radius: 50%;
-                width: 8px;
-                height: 8px;
-                position: absolute;
-                top: 0;
-                left: 0;
-                transform: translate(150%, 150%);
+                &::before {
+                    content: "";
+                    background-color: var(--neutral-800);
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translate(150%, 150%);
                 }
             }
         }
-        img{
+
+        img {
             border-radius: 11px;
         }
     }
+}
+
+.recipes-page main {
+    .hero {
+        padding-block-end: 48px;
+
+        h1 {
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 120%;
+            letter-spacing: -2px;
+            color: var(--neutral-900);
+            margin-block-end: 12px;
+        }
+
+    }
+
+    .recipes {
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+            margin-block-end: 24px;
+        }
+
+        ul {
+            display: flex;
+            row-gap: 32px;
+            flex-wrap: wrap;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                padding: 8px;
+                gap: 16px;
+                width: 343px;
+                min-height: 554px;
+                background: var(--neutral-0);
+                border: 1px solid var(--neutral-200);
+                box-shadow: 0px 8px 16px -9px rgba(22, 58, 52, 0.16);
+                border-radius: 10px;
+
+                img {
+                    max-width: 500px;
+                    width: 100%;
+                    height: 100%;
+                    max-height: 300px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+
+                h2 {
+
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 140%;
+
+                    letter-spacing: -0.5px;
+
+                    color: var(--neutral-900);
+                    margin-block-end: 10px;
+                }
+
+                p {
+                    font-size: 16px;
+                    letter-spacing: -0.3px;
+                }
+
+                span {
+                    font-size: 16px;
+                    letter-spacing: -0.3px;
+                    color: var(--neutral-900);
+                }
+
+                .descr {
+                    display: flex;
+                    gap: 8px 16px;
+                    flex-wrap: wrap;
+                    justify-content: start;
+                    align-items: center;
+
+                    span {
+                        padding-inline-start: 26px;
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                    }
+
+                    span:nth-child(1) {
+                        content: "";
+                        background-image: url(../images/icon-servings.svg);
+                    }
+
+                    span:nth-child(2) {
+                        content: "";
+                        background-image: url(../images/icon-prep-time.svg);
+                    }
+
+                    span:nth-child(3) {
+                        content: "";
+                        background-image: url(../images/icon-cook-time.svg);
+                    }
+                }
+
+                a {
+                    width: 100%;
+                    text-align: center;
+                    padding: 12px 32px;
+                    background: var(--neutral-900);
+                    border-radius: 999px;
+                    color: var(--neutral-0);
+                }
+            }
+        }
+    }
+
 }
 
 footer {
